@@ -1,16 +1,16 @@
-# ⚛️ gatsby-starter-strict
+# ⚛️ andy-osei.dev
 
-A Gatsby starter with strict linting and auto-formatting rules.
+My portfolio site showcasing my skills as a software engineer, projects and learnings over the years.
 
-## 🚀 Getting started
+## 🚀 Setup
 
-- Clone this project and install all the required dependencies _(e.g. with `npx gatsby new gatsby-example-site https://github.com/kripod/gatsby-starter-strict`)_
+- Clone this project and install all the required dependencies _(e.g. with `git clone https://github.com/AndyOsei/portfolio-site.git`)_
 - Start a development server with `yarn develop` or `npm run develop`
   - _Other scripts like `build`, [`format`](#automatic-code-formatting), [`type-check`](#static-type-checking) and [`lint`](#linting) are also available_
 
 ### Deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/kripod/gatsby-starter-strict)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/AndyOsei/portfolio-site.git)
 
 ## ✨ Developer experience
 
