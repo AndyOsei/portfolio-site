@@ -96,7 +96,31 @@ export default function IndexPage(): JSX.Element {
                 align="center"
                 justify="center"
               >
-                <Icon name="plus" />
+                <Icon name="small-add" size="20px" color="dark.600" />
+              </Flex>
+            </Flex>
+            <Flex>
+              <Text
+                fontSize="md"
+                color="dark.500"
+                mr={-12}
+                transform="rotateZ(90deg)"
+              >
+                +233 (2439) 66-56-4
+              </Text>
+            </Flex>
+            <Flex direction="row">
+              <Text fontSize="md" color="darkLight.600" mr={2}>
+                MY WORKS
+              </Text>
+              <Flex
+                bg="dark.800"
+                size="20px"
+                borderRadius={10}
+                align="center"
+                justify="center"
+              >
+                <Icon name="chevron-right" size="20px" color="dark.200" />
               </Flex>
             </Flex>
           </Flex>
