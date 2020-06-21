@@ -23,6 +23,10 @@
     "simple-import-sort/sort": "error",
 
     // Using a type system makes it safe enough to spread props
-    "react/jsx-props-no-spreading": "off"
+    "react/jsx-props-no-spreading": "off",
+
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "react/destructuring-assignment": "off"
   }
 }

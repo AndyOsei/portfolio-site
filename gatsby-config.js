@@ -24,6 +24,12 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-typescript',
     {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve(`./src/components/layout.tsx`),
+      },
+    },
+    {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
         fonts: [
