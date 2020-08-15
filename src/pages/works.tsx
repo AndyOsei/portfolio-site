@@ -6,8 +6,9 @@ import Content from '../components/content';
 import Layout from '../components/layout';
 import Sidebar from '../components/sidebar';
 
-export default function About(props: PageProps): JSX.Element {
+export default function Works(props: PageProps): JSX.Element {
   const { referrer } = props.location as any;
+  console.log('location', props.location);
 
   return (
     <Layout>

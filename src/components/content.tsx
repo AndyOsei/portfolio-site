@@ -4,7 +4,7 @@ import React from 'react';
 
 interface ContentProps {
   children?: React.ReactNode;
-  path?: string;
+  referrer?: string;
 }
 
 const MotionFlex = motion.custom(Flex);
@@ -22,8 +22,11 @@ const variants = {
   },
 };
 
-export default function Content({ children, path }: ContentProps): JSX.Element {
-  const index = path === '/';
+export default function Content({
+  children,
+  referrer,
+}: ContentProps): JSX.Element {
+  const index = referrer === '/';
   return (
     <MotionFlex
       initial="index"

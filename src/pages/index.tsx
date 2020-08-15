@@ -2,14 +2,17 @@ import { Box, Text } from '@chakra-ui/core';
 import { PageProps } from 'gatsby';
 import React from 'react';
 
-import usePath from '../hooks/usePath';
+import Content from '../components/content';
+import Layout from '../components/layout';
+import Sidebar from '../components/sidebar';
 
 export default function IndexPage(props: PageProps): JSX.Element {
-  usePath(props.location.pathname);
+  const { referrer } = props.location as any;
 
   return (
-    <Box>
-      <Text>Yes</Text>
-    </Box>
+    <Layout>
+      <Sidebar {...{ referrer }} />
+      <Content {...{ referrer }} />
+    </Layout>
   );
 }

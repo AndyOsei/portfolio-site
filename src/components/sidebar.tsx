@@ -15,13 +15,17 @@ const variants = {
   not_index: {
     width: '20%',
     transition: {
-      duration: 1.5,
+      duration: 2,
     },
   },
 };
 
-export default function Sidebar({ path }: { path?: string }): JSX.Element {
-  const index = path === '/';
+export default function Sidebar({
+  referrer,
+}: {
+  referrer?: string;
+}): JSX.Element {
+  const index = referrer === '/';
 
   return (
     <MotionFlex
@@ -31,6 +35,7 @@ export default function Sidebar({ path }: { path?: string }): JSX.Element {
       w="50%"
       h="100vh"
       bg="dark.800"
+      background="linear-gradient(0deg, rgba(7,16,26,1) 0%, rgba(7,21,30,1) 20%, rgba(25,40,51,1) 100%)"
     >
       <Flex p="30px" direction="column" justify="space-between">
         <Box>
